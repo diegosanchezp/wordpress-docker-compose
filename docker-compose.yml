@@ -2,7 +2,8 @@ version: '3'
 
 services:
   wp:
-    image: wordpress:latest # https://hub.docker.com/_/wordpress/
+    image: wptheme:1.0 # https://hub.docker.com/_/wordpress/
+    build: ./
     ports:
       - ${IP}:80:80 # change ip if required
     volumes:
