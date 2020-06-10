@@ -1,6 +1,33 @@
-# WPDC - WordPress Docker Compose
+# A custom wordpress theme development enviroment
 
-Easy WordPress development with Docker and Docker Compose.
+Easy WordPress theme development with Docker and Docker Compose.
+
+It installs the following dependencies 
+- Nodejs
+- Yarn
+- Composer 
+
+To work with the [underscores theme](https://github.com/automattic/_s)
+
+See [dockerfile](https://github.com/diegosanchezp/wordpress-docker-compose/blob/master/Dockerfile)
+
+## Quick setup
+Install or run containers
+```
+docker-compose up
+```
+
+- Your wordpress content will be on wp-app
+
+ -Install themes for development in the `wp-app/wp-content/themes/` directory
+
+- Run commands in the wordpress container after installed and running with `docker exec` 
+
+```
+docker exec -it CONTAINER /bin/bash 
+```
+
+## Original documentation
 
 With this project you can quickly run the following:
 
