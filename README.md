@@ -19,7 +19,7 @@ docker-compose up
 
 - Your wordpress content will be on wp-app
 
- -Install themes for development in the `wp-app/wp-content/themes/` directory
+- Install themes for development in the `wp-app/wp-content/themes/` directory
 
 - Run commands in the wordpress container after installed and running with `docker exec` 
 
@@ -27,7 +27,7 @@ docker-compose up
 docker exec -it CONTAINER /bin/bash 
 ```
 
-## Original documentation
+## Original documentation from forked repository
 
 With this project you can quickly run the following:
 
